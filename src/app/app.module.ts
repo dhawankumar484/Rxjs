@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ObservableComponent } from './observable/observable.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { ListComponent } from './observable/list/list.component';
+import { IntervalTimerComponent } from './observable/interval-timer/interval-timer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListComponent } from './observable/list/list.component';
     HeadersComponent,
     ObservableComponent,
     FromEventComponent,
-    ListComponent
+    ListComponent,
+    IntervalTimerComponent
     ],
   imports: [
     BrowserModule,
