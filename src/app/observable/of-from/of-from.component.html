@@ -1,0 +1,79 @@
+<div class="my-3">
+    <button [routerLink]="['']" class="btn btn-primary">Back</button>
+    <hr>
+    <h2>Of</h2>
+    <br>
+    <p>The RxJS of() operator takes the arguments passed and convert them to observable. In this operator, each argument becomes the next notification. Unlike the from() operator, it does not do any flattening and emits each argument in whole as a separate next notification.</p>
+    <br>
+    <p>Syntax of the of() creation operator:</p>
+    <h6>&nbsp;of(input: array[]):Observable </h6>
+    <br>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>of('Abhishek', 'Varun','Umang')
+            </p>
+            <hr>
+            <ul id="elContainer"></ul>
+        </div>
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>of(&#123;a:'Abhishek', b:'Varun',c:'Umang'&#125;)
+            </p>
+            <hr>
+            <ul id="elContainer">
+                <li><Strong>a: </Strong>{{objMsg.a}}</li>
+                <li><Strong>b: </Strong>{{objMsg.b}}</li>
+                <li><Strong>c: </Strong>{{objMsg.c}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <h2>From</h2>
+    <br>
+    <p>The RxJS from() operator is used to transform data that can be iterated over to an observable. It turns an array, promise, or iterable into an observable. 
+        <br><br>
+        It is most useful when we have to normalize the types of data that is being passed and shared in observable sequences or when a function expects to receive and act on an observable. It is also preferred to use when we want to use an RxJS operator that wouldn't normally be available on the original data type.
+        <br><br>
+         It converts almost everything to an Observable.
+    </p>
+    <br>
+    <p>Syntax of the of() creation operator:</p>
+    <h6>&nbsp;from(input: ObservableInput): Observable</h6>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <Strong>Array</Strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>of(['Abhishek', 'Varun','Umang'])
+            </p>
+            <hr>
+            <ul id="elContainer3"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <Strong>Promise</Strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>Promise to Observable
+            </p>
+            <hr>
+            <ul id="elContainer4"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <Strong>String</Strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>String to Observable
+            </p>
+            <hr>
+            <ul id="elContainer5"></ul>
+        </div>
+    </div>
+
+    </div>

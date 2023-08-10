@@ -9,6 +9,8 @@ import { ObservableComponent } from './observable/observable.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { ListComponent } from './observable/list/list.component';
 import { IntervalTimerComponent } from './observable/interval-timer/interval-timer.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { IntervalTimerComponent } from './observable/interval-timer/interval-tim
     ObservableComponent,
     FromEventComponent,
     ListComponent,
-    IntervalTimerComponent
+    IntervalTimerComponent,
+    OfFromComponent,
+    ToArrayComponent
     ],
   imports: [
     BrowserModule,
